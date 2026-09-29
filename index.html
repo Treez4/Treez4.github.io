@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio - Domovská stránka JH</title>
+        <meta name="keywords" content="portfolio, web, Jiří Horák, webové technologie, webové systémy, frontend, backend, UX/UI design">
+        <meta name="description" content="Osobní portfolio, web Jiřího Horáka-studenta webových technologií a systémů.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+        <link rel="icon" href="img/logoimage.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class ="logo">
+                        <img src ="img/logoimage.png" alt= "logohvezda">
+                        <div class="logo-text">Jiří Horák</div>
+                        <div class="logo-user">Treez4</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="index.html">Domovská stránka</a></li>
+                            <li><a href="#">Whoami?</a></li>
+                            <li><a href="#">Životopis</a></li>
+                            <li><a href="Kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="profile-pic">
+                        <img src="img/profilepicture.png" alt="profile pic">
+                    </div>
+                    <div class="hero-text">
+                        <h5>Ahoj ! Jsem <span class ="input">Student</span></h5>
+                        <h1>Jiří Horák<br> A.K.A Treez4</h1>
+                        <p> Student webových technologií a systémů, budoucí Backend vývojář ? Frontend vývojář ? UX/UI designér ? Nevím, kam mě weby zavedou.
+                        </p>
+                        <div class="btn-group">
+                        <a href="#" class="btn active">Stáhnout životopis</a>
+                        <a href="kontakt.html" class="btn">Kontakt</a>
+                        </div>
+
+                        <div class="social">
+                            <a href="https://github.com/Treez4" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ji%C5%99%C3%AD-hor%C3%A1k-133955436/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/jirik____/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/jirka.horak.906/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/3.0.0/typed.umd.js"></script>
+        <script>
+            /**Tlačítko na mobilním rozhraním na animaci troj baru**/
+            var togglebtn=document.querySelector(".togglebtn");
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelector(".navlinks li");
+            
+            togglebtn.addEventListener("click", function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+            /**Typing js script**/
+            var typed=new Typed(".input",{
+                strings:["Student", "Gamer", "Coder", "Člověk"],
+                typeSpeed:100,
+                backSpeed:50,
+                loop:true
+            })
+        </script>
+    </body>
+</html>
